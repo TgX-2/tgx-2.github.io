@@ -1,0 +1,720 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Đà Lạt năm 2024 (ngoại khóa lớp 10)</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+	margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(50, 48, 44, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-default_background {
+	color: rgba(50, 48, 44, 1);
+}
+.highlight-gray_background {
+	background: rgba(248, 248, 247, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(248, 243, 252, 1);
+}
+.highlight-pink_background {
+	background: rgba(252, 241, 246, 1);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(248, 248, 247, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(248, 243, 252, 1);
+}
+.block-color-pink_background {
+	background: rgba(252, 241, 246, 1);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-uiBlue { background-color: undefined; }
+.select-value-color-pink { background-color: rgba(225, 136, 179, 0.27); }
+.select-value-color-purple { background-color: rgba(168, 129, 197, 0.27); }
+.select-value-color-green { background-color: rgba(123, 183, 129, 0.27); }
+.select-value-color-gray { background-color: rgba(84, 72, 49, 0.15); }
+.select-value-color-transparentGray { background-color: undefined; }
+.select-value-color-translucentGray { background-color: undefined; }
+.select-value-color-orange { background-color: rgba(224, 124, 57, 0.27); }
+.select-value-color-brown { background-color: rgba(210, 162, 141, 0.35); }
+.select-value-color-red { background-color: rgba(244, 171, 159, 0.4); }
+.select-value-color-yellow { background-color: rgba(236, 191, 66, 0.39); }
+.select-value-color-blue { background-color: rgba(93, 165, 206, 0.27); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="1e101117-2246-80e9-84a3-d987039ee8d8" class="page sans"><header><img class="page-cover-image" src="DaLat/Ni_dung_on_vn_bn_ca_bn_(1).png" style="object-position:center 57.69%"/><div class="page-header-icon page-header-icon-with-cover"><span class="icon">⛰️</span></div><h1 class="page-title">Đà Lạt năm 2024 (ngoại khóa lớp 10)</h1><p class="page-description"></p></header><div class="page-body"><h1 id="1e101117-2246-804f-9d70-f3190576e95a" class="">Lời bạt</h1><p id="1e101117-2246-8062-a45c-cb5389a7159f" class="">Chắc chắn rồi, đây sẽ là kỷ niệm đáng nhớ nhất của cuộc đời cấp 3 của tôi.</p><p id="1e101117-2246-8040-950f-f991380fad40" class="">Từ con người, phong cảnh, bạn bè, … mọi thứ đều tuyệt vời.</p><h1 id="1e101117-2246-80c5-aafe-f50140b9255f" class="">Timeline</h1><h3 id="1e101117-2246-8022-b638-ff28e75085e4" class="">Chuẩn bị đi</h3><p id="1e101117-2246-8015-b70f-c6bcc085f0a9" class="">Vì là cần phải chuẩn bị đi từ sớm (thông báo tập trung từ 4h30 nhưng mãi 5h mới lên xe) nên tôi, Tèo, Lehuhu đã xin lên ký túc xá từ tối hôm qua. Cả đêm háo hức + ăn cái l gì đó mà đau bụng ⇒ cả đêm méo ngủ được.</p><div id="1e101117-2246-80d6-b3fe-e2e050dd0b2a" class="column-list"><div id="1e101117-2246-8066-807f-e57229afd5ac" style="width:43.75%" class="column"><figure id="1e101117-2246-8073-98c1-f9e3f3795674" class="image" style="text-align:center"><a href="DaLat/z5040906833059_c45510148b9d8dad2c45544816adc98e.jpg"><img style="width:288px" src="DaLat/z5040906833059_c45510148b9d8dad2c45544816adc98e.jpg"/></a><figcaption>Ảnh xe chở tôi đi - xe số 1</figcaption></figure><p id="1e101117-2246-8091-8399-f6af5cbbb852" class="">
+</p></div><div id="1e101117-2246-80bc-befd-dc8042f33338" style="width:56.25%" class="column"><figure id="1e101117-2246-8025-bcbf-c622ee0f48ef" class="image"><a href="DaLat/z5040888296886_61c0e4ac27f7957b7d726c132af86125.jpg"><img style="width:384px" src="DaLat/z5040888296886_61c0e4ac27f7957b7d726c132af86125.jpg"/></a><figcaption>Mấy bạn 10A1</figcaption></figure><p id="1e101117-2246-809c-9c2f-c75169a958b8" class="">
+</p></div></div><h3 id="1e101117-2246-807e-a34b-eab4951658bb" class="">Buổi ăn sáng đầu tiên</h3><p id="1e101117-2246-80f7-9721-d85c31f730c3" class="">Không có gì đặc biệt cả, như một chuyến du lịch bình thường.</p><figure id="1e101117-2246-8004-964a-e15946f98268" class="image"><a href="DaLat/image.png"><img style="width:709.96875px" src="DaLat/image.png"/></a><figcaption>Ăn như cưk</figcaption></figure><p id="1e101117-2246-808e-9d5a-fcd2493cfcfc" class="">
+</p><h3 id="1e101117-2246-803f-842b-dce3ed0bca67" class="">Điểm đến đầu tiền Chiến thắng La Ngà</h3><figure id="1e101117-2246-80be-b875-c070cbc729a8" class="image"><a href="DaLat/z5044607521457_dcd74bb5afcd3bfa61838269d1e055ed.jpg"><img style="width:2568px" src="DaLat/z5044607521457_dcd74bb5afcd3bfa61838269d1e055ed.jpg"/></a><figcaption>Đứng đầu hàng luôn</figcaption></figure><p id="1e101117-2246-8057-8ce2-de1be33ecb6d" class="">Yeah, được nghe về chiến thắng La Ngà, và không có gì cả.</p><p id="1e101117-2246-8027-813d-d8a6df512474" class="">
+</p><h3 id="1e101117-2246-8070-a81c-c715f5fa9ac2" class="">Đến Đà Lạt</h3><p id="1e101117-2246-80b7-998b-f874b4c76fd4" class="">Khoảng tầm 3h chiều là chúng tôi đã đến Đà Lạt và nhận phòng.</p><p id="1e101117-2246-80d8-805d-cbc657272e9b" class="">Đặt đít xuống giường là nằm ngủ luôn.</p><p id="1e101117-2246-80a4-b9bb-c5df363b490d" class="">
+</p><h3 id="1e101117-2246-8031-b0c3-cdd6514033fc" class="">Đi ăn tối</h3><p id="1e101117-2246-80d6-81f6-df0c25683a2f" class="">Chỗ ăn tối khá là vl. Nó là tầng hầm của 1 căn biệt thự. Và đồ ăn ngon vl, món nào cũng ngon, đánh giá cao.</p><p id="1e101117-2246-804f-84c2-edac5e92eb83" class="">
+</p><figure id="1e101117-2246-804e-b063-d0df56f0c779" class="image"><a href="DaLat/image%201.png"><img style="width:709.96875px" src="DaLat/image%201.png"/></a><figcaption>Cái gà nướng ngon.</figcaption></figure><p id="1e101117-2246-8061-95e1-f2b4921aea0f" class="">Lúc đặt chân xuống xe cái là cảm nhận được không khí lạnh của Đà Lạt luôn. Vẫn nhớ cảm giác đấy vl.</p><p id="1e101117-2246-8084-9dd1-eeb4bba45f69" class="">Một vài hình ảnh…</p><p id="1e101117-2246-8040-a5a2-e6e8172be689" class="">
+</p><figure id="1e101117-2246-800c-91e6-dbd2cca5492e" class="image"><a href="DaLat/z5044607113206_40b3de4164388a5ad67e429292114f3e.jpg"><img style="width:2560px" src="DaLat/z5044607113206_40b3de4164388a5ad67e429292114f3e.jpg"/></a><figcaption>Zoooo</figcaption></figure><figure id="1e101117-2246-80a8-a63a-d6d64fa91b5b" class="image"><a href="DaLat/z5044607100431_e960cebe706e77b8f703a46a375d0b71.jpg"><img style="width:2560px" src="DaLat/z5044607100431_e960cebe706e77b8f703a46a375d0b71.jpg"/></a><figcaption>Cầm đũa kiểu méo j đấy</figcaption></figure><figure id="1e101117-2246-806a-8bf3-d749c3d63c97" class="image"><a href="DaLat/z5044607821284_69db48bdf4f0dd6b29ed21237bd05975.jpg"><img style="width:2560px" src="DaLat/z5044607821284_69db48bdf4f0dd6b29ed21237bd05975.jpg"/></a></figure><p id="1e101117-2246-80dc-8d27-f219b17679f6" class="">
+</p><h3 id="1e101117-2246-8098-9815-e0dcda93f605" class="">Đi chợ đêm</h3><p id="1e101117-2246-80b7-8cc3-d17684c9707c" class="">Đi chung với Nhân, Lehuhu, Tèo. Đông phết, và cũng chẳng mua gì.</p><p id="1e101117-2246-8059-82cc-cf64e572a6b3" class="">
+</p><figure id="1e101117-2246-8054-9051-dbae608c8062" class="image"><a href="DaLat/%E3%82%BF%E3%82%A4%E3%83%88%E3%83%AB%E3%81%AA%E3%81%97.png"><img style="width:709.96875px" src="DaLat/%E3%82%BF%E3%82%A4%E3%83%88%E3%83%AB%E3%81%AA%E3%81%97.png"/></a></figure><figure id="1e101117-2246-8069-ab04-f80baa346063" class="image"><a href="DaLat/123.png"><img style="width:709.96875px" src="DaLat/123.png"/></a></figure><figure id="1e101117-2246-806a-b63a-e7192abdff4a" class="image"><a href="DaLat/22222.png"><img style="width:709.984375px" src="DaLat/22222.png"/></a></figure><p id="1e101117-2246-80bd-9e7b-d58ff4a946b0" class="">
+</p><h3 id="1e101117-2246-8079-8dd0-e54a8b26b8b0" class="">Ăn sinh tố bơ</h3><p id="1e101117-2246-806b-bf40-d1ac44a01b26" class="">Lúc quay về khi đi xong chợ rồi tự nhiên gặp tụi 10T1 giờ mới ra.</p><p id="1e101117-2246-80a9-a473-e7e77ce73b78" class="">Thế là nhập đoàn luôn.</p><p id="1e101117-2246-801d-b292-ed76b9448990" class="">Rồi đi được 1 lúc lại gặp mấy thằng chung lớp đang đi mua đồ lưu niệm.</p><p id="1e101117-2246-80da-9124-fbce1529fd45" class="">Thế là cả đám đi theo “người bản địa”.</p><div id="1e101117-2246-80fa-8593-fe43803fc574" class="column-list"><div id="1e101117-2246-80b8-93d7-c68917fe9c0e" style="width:50%" class="column"><figure id="1e101117-2246-806c-a47c-dcdcd24b814d" class="image" style="text-align:left"><a href="DaLat/e31d8be5-57ce-4c65-bcd6-a67a79fd6af7.png"><img style="width:336px" src="DaLat/e31d8be5-57ce-4c65-bcd6-a67a79fd6af7.png"/></a></figure></div><div id="1e101117-2246-8032-b13e-f2f5e45b2fb7" style="width:50%" class="column"><p id="1e101117-2246-80f3-8859-fd963fc8ed5d" class="">Chụp xong ảnh là máy sập nguồn luôn.</p><p id="1e101117-2246-8062-89ae-c2f6b8230f40" class="">Nhưng mà quả nắp ảo vl.</p><p id="1e101117-2246-808b-96b4-cdd3d069a6ca" class="">
+</p><p id="1e101117-2246-8028-af50-d4e89b27a433" class="">
+</p><p id="1e101117-2246-80aa-a9a2-de54307defad" class="">
+</p><p id="1e101117-2246-8061-8703-f9f0f946a4fb" class="">
+</p><p id="1e101117-2246-8060-93d8-c5f62ce4d6e8" class="">
+</p><p id="1e101117-2246-8030-8f04-cc8ad6c62a0d" class="">
+</p><p id="1e101117-2246-8092-a00f-f5ee96c83cc8" class="">
+</p><p id="1e101117-2246-8023-802b-e5427c4d8591" class="">
+</p><p id="1e101117-2246-80e1-a6b4-ff5a7f6c5294" class="">
+</p><figure id="1e101117-2246-80bf-8ac0-de8118ca8d64" class="image"><a href="DaLat/image%202.png"><img style="width:710px" src="DaLat/image%202.png"/></a><figcaption>Nhân ở đây vì mấy thằng trong phòng chưa về.</figcaption></figure></div></div><figure id="1e101117-2246-809f-a0f9-f23a9ff6c70b" class="image"><a href="DaLat/image%203.png"><img style="width:709.984375px" src="DaLat/image%203.png"/></a><figcaption>Xem movie bunny girl senpai</figcaption></figure><h3 id="1ed01117-2246-80d5-a7a5-f5d70faa4f82" class="">Dạo chơi ở Hồ Xuân Hương</h3><p id="1ed01117-2246-805d-909d-f5fd4ffb3b0a" class="">Tuy là khách sạn khá tồi tàn, nhưng có một điểm cộng là gần hồ Xuân Hương phết.</p><p id="1ed01117-2246-80db-bae2-c7a33847f0e2" class="">Sáng đó bảo HuHu đặt báo thức 4h rồi cả bọn đi ra hồ chơi, nói chung là sáng sớm méo có gì cả.</p><p id="1ed01117-2246-8089-975c-c90f173fbb7b" class="">
+</p><h3 id="1e101117-2246-80e3-9db9-f5fcca22af7b" class="">Đi Mongo Land</h3><p id="1e101117-2246-80c9-b193-df3b563008c6" class="">Vui, rất vui.</p><p id="1e101117-2246-8035-9eb7-c1feec2724b4" class="">Có cái cầu trượt phao. May là xếp hàng sớm để trượt chứ thấy hàng xếp lâu vl.</p><p id="1e101117-2246-8090-8854-c22d363dbae1" class="">
+</p><figure id="1e101117-2246-8078-8223-cb7535e316a1"><div class="source"><a href="DaLat/7674078069331080118.mp4">attachment:08eb8122-d0ab-4b3c-9a8f-995fcceff87c:7674078069331080118.mp4</a></div></figure><figure id="1e101117-2246-808f-9ff4-ca5808862b9b"><div class="source"><a href="DaLat/7722644765928529531.mp4">attachment:7e228020-b6f8-4f14-b9ab-7dd302eea127:7722644765928529531.mp4</a></div></figure><p id="1e101117-2246-80cc-9943-ca5b9ae705df" class="">Méo có ảnh hay video mình trượt mới cay chứ.</p><div id="1e101117-2246-8051-bb72-cf040c421909" class="column-list"><div id="1e101117-2246-801b-aec0-c8b7ec32acfe" style="width:50%" class="column"><figure id="1e101117-2246-808a-be3f-cd4e9be74ff4" class="image"><a href="DaLat/z5044606000159_7a455f682032fee7fd9304e3b4bdb2e4.jpg"><img style="width:2568px" src="DaLat/z5044606000159_7a455f682032fee7fd9304e3b4bdb2e4.jpg"/></a></figure></div><div id="1e101117-2246-80d5-977d-e1ea5edad05d" style="width:50%" class="column"><figure id="1e101117-2246-806e-8f6d-d89881f4568b" class="image"><a href="DaLat/z5044605668681_1363b0184577d9cccbf0e5850b93b008.jpg"><img style="width:2568px" src="DaLat/z5044605668681_1363b0184577d9cccbf0e5850b93b008.jpg"/></a></figure></div></div><p id="1e101117-2246-8015-bf95-e0a0cfd6325f" class="">Rồi chụp ảnh tập thể này.</p><figure id="1e101117-2246-809a-8e6e-fe137a602d79"><div class="source"><a href="DaLat/1616827304460624939.mp4">attachment:95351ac9-b190-4e3b-9e79-7aba56834ed6:1616827304460624939.mp4</a></div></figure><figure id="1e101117-2246-80ab-9f49-f203c790d8fb" class="image"><a href="DaLat/z5044606527934_23ea905041ac9109c8cf7a8c9b468367.jpg"><img style="width:2568px" src="DaLat/z5044606527934_23ea905041ac9109c8cf7a8c9b468367.jpg"/></a></figure><div id="1e101117-2246-80dd-8c90-f6ff43c50347" class="column-list"><div id="1e101117-2246-8006-8719-d3d0b8804e95" style="width:56.25%" class="column"><figure id="1e101117-2246-80ec-a8b6-c65aa640574d" class="image"><a href="DaLat/z5044604111544_57a15ce2ad50509fb32e01bd0ced23e0.jpg"><img style="width:336px" src="DaLat/z5044604111544_57a15ce2ad50509fb32e01bd0ced23e0.jpg"/></a></figure></div><div id="1e101117-2246-8054-b8ce-f1c05d728506" style="width:43.75000000000001%" class="column"><figure id="1e101117-2246-8012-b5f1-fa4f8e02efce" class="image"><a href="DaLat/z5044604475943_d359a11078812267352306e317d80f86.jpg"><img style="width:2568px" src="DaLat/z5044604475943_d359a11078812267352306e317d80f86.jpg"/></a></figure><figure id="1e101117-2246-8092-af70-d6f23670d9fa" class="image"><a href="DaLat/z5044605390940_22614c00636b2ec5582ad4862bd082f2.jpg"><img style="width:2568px" src="DaLat/z5044605390940_22614c00636b2ec5582ad4862bd082f2.jpg"/></a></figure><p id="1e101117-2246-80bd-9c63-fb63a491cf3e" class="">Ảnh từ máy anh Thiện</p><p id="1e101117-2246-807c-903b-f403404a1b70" class="">
+</p></div></div><p id="1e101117-2246-8016-bb6a-dd4fb3b6dc9e" class="">
+</p><figure id="1e101117-2246-8035-b2df-ea36bc8a5e87" class="image"><a href="DaLat/z5044603730039_3c000c896002fb9019da06eb39cec419.jpg"><img style="width:2568px" src="DaLat/z5044603730039_3c000c896002fb9019da06eb39cec419.jpg"/></a></figure><figure id="1e101117-2246-80ed-8449-cddd6ca8755b" class="image"><a href="DaLat/z5044606851794_f9ed3da4abc4397f45e70a100bdf086f.jpg"><img style="width:2568px" src="DaLat/z5044606851794_f9ed3da4abc4397f45e70a100bdf086f.jpg"/></a></figure><p id="1ed01117-2246-8074-aef2-edf4b01191bb" class="">Sau đó thì chỉ đi ngắm thú + đi kiếm LeHuHu thôi chứ cũng không làm gì cả.</p><p id="1ed01117-2246-8050-bf64-faffccec934f" class="">Khá là chill.</p><p id="1ed01117-2246-804e-b63d-d7b2e0239e66" class="">
+</p><h3 id="1ed01117-2246-80a2-a833-c738517112dd" class="">Fresh Garden Đà Lạt</h3><p id="1ed01117-2246-80b0-8ad0-e3dd86447f3f" class="">Nơi này chủ yếu là để chụp ảnh với gì thôi nên đối với tôi cũng không có gì đặc biệt cho lắm</p><figure id="1ed01117-2246-80e8-97e1-f3505232f4ce" class="image"><a href="DaLat/1232333333.png"><img style="width:709.984375px" src="DaLat/1232333333.png"/></a></figure><figure id="1ed01117-2246-8010-9848-dcbc2d12f456" class="image"><a href="DaLat/12323.png"><img style="width:709.96875px" src="DaLat/12323.png"/></a></figure><p id="1ed01117-2246-80d7-a107-d9a715653e90" class="">
+</p><div id="1ed01117-2246-803a-9ce0-d1801ab6dc78" class="column-list"><div id="1ed01117-2246-8060-b692-cc5e666a374a" style="width:50%" class="column"><figure id="1ed01117-2246-80d4-bd89-ee26d3f49da0" class="image" style="text-align:left"><a href="DaLat/z5045240732911_04e0d76778af038d9786a3e14b2bf126.jpg"><img style="width:336px" src="DaLat/z5045240732911_04e0d76778af038d9786a3e14b2bf126.jpg"/></a></figure></div><div id="1ed01117-2246-8057-ab8b-db16bf0094b4" style="width:50%" class="column"><p id="1ed01117-2246-8066-87f1-f149a56f7081" class="">Tối hôm trước, khi lên xe để di chuyển đến nơi ăn tối. Méo hiểu sao mấy bạn lớp A cầm cái xô đi qua. Thầy Tùng cũng thấy rồi nhìn chúng tôi cười, chúng tôi nhìn thầy rồi cũng cười, không ai hiểu gì cả. </p><p id="1ed01117-2246-8095-960c-c5246fe3a55a" class="">
+</p></div></div><p id="1ed01117-2246-804f-bb3d-e275adeaec20" class="">Rồi bây giờ mới hiểu nó đựng cái gì, đồ cos.</p><p id="1ed01117-2246-8061-8663-d1d7a9703528" class="">
+</p><p id="1ed01117-2246-80db-bb47-e5edfa0dbf97" class="">Đi chơi khám phá với HuHu, Nhân, mệt + nắng vl thì thấy ở quán cà phê mấy thằng này ngồi chơi game ạ.</p><figure id="1ed01117-2246-80e1-a5dc-efe737797a48" class="image"><a href="DaLat/122222222.png"><img style="width:709.96875px" src="DaLat/122222222.png"/></a></figure><h3 id="1ed01117-2246-806f-940d-f199a1154fdc" class="">Đi Giáo xứ Don Bosco?</h3><p id="1ed01117-2246-800f-be53-e5d8c8e2600d" class="">Chỉ có mấy đứa nam với anh HDV đi thôi, (may ban nu duoc o khach san vi can phai trang diem cho gala toi), mà bắt đi bộ hết tất cả.</p><p id="1ed01117-2246-80e4-95cd-cf9041a584ec" class="">Trong mấy ảnh này không có tôi đâu, vì ăn cl gì đó đau bụng nên chạy về trước rồi.</p><figure id="1ed01117-2246-807a-b6e2-e45a6ea2fd55" class="image"><a href="DaLat/z5045534667237_257fe98cf5f34fe4a9e534522f9893d0.jpg"><img style="width:2560px" src="DaLat/z5045534667237_257fe98cf5f34fe4a9e534522f9893d0.jpg"/></a><figcaption>Tấm này chụp lúc mới đến nên có mặt.</figcaption></figure><figure id="1ed01117-2246-80bd-9433-e8af0b61eac2" class="image"><a href="DaLat/z5046012289297_1b3eb57a8eca9282c185b08d6092fd28.jpg"><img style="width:2568px" src="DaLat/z5046012289297_1b3eb57a8eca9282c185b08d6092fd28.jpg"/></a></figure><figure id="1ed01117-2246-80aa-9df3-d6fa3041c12d" class="image"><a href="DaLat/z5046012317688_b38287dad6c14a52694acd430df15a97.jpg"><img style="width:2568px" src="DaLat/z5046012317688_b38287dad6c14a52694acd430df15a97.jpg"/></a></figure><p id="1ed01117-2246-8079-af4c-c1a20940fb6f" class="">
+</p><h3 id="1ed01117-2246-8082-900d-cb6d0c28b190" class="">Đi Gala + Giao lưu với Chuyên Thăng Long</h3><p id="1ed01117-2246-80ab-b42c-ec25dda231c4" class="">Đói vl.</p><p id="1ed01117-2246-800e-b722-f379123f4663" class="">Phải chờ giao lưu xong thì mới được nhập tiệc, cũng tội mấy bạn trường Thăng Long vì đã đến rồi mà trường H quá keo không mời ăn, chỉ nói chuyện cho khô mồm rồi cho cúc.</p><p id="1ed01117-2246-8083-88ae-eeef005085e5" class="">
+</p><div id="1ed01117-2246-80e2-b6af-f63f863c9b6c" class="column-list"><div id="1ed01117-2246-8030-8069-e1fcc0c6b8ce" style="width:50%" class="column"><figure id="1ed01117-2246-8009-a721-f1869c223a5e" class="image" style="text-align:left"><a href="DaLat/z5046601033190_260fb77eb8612a4bb663941d8d7c6c1f.jpg"><img style="width:336px" src="DaLat/z5046601033190_260fb77eb8612a4bb663941d8d7c6c1f.jpg"/></a></figure></div><div id="1ed01117-2246-8027-b3af-c761f04dcf0f" style="width:50%" class="column"><p id="1ed01117-2246-8040-a6bf-ede130dbff0c" class="">Thầy Tùng phát biểu.</p><p id="1ed01117-2246-80e4-9623-ede1dfbcc3e0" class="">
+</p><p id="1ed01117-2246-8045-882c-efb1969cd948" class="">
+</p><p id="1ed01117-2246-80ed-bfab-d10b1a527fa5" class="">Có một sự kiện khá là vl.</p><p id="1ed01117-2246-8020-9251-ecafd2804727" class="">Thầy ngồi chung với chúng tôi ở trên xe, có thằng còn mời thầy quà bánh, cà phê, có đứa còn ngồi tâm sự với thầy. </p><p id="1ed01117-2246-80cb-8783-d48373b0e158" class="">
+</p></div></div><p id="1ed01117-2246-80ea-9913-f8e75343c589" class="">
+</p><div id="1ed01117-2246-8077-9d4d-cef34e05de20" class="column-list"><div id="1ed01117-2246-807d-a82c-f500bb8dfdcf" style="width:50%" class="column"><figure id="1ed01117-2246-8079-a7dd-fde34ee1c513" class="image"><a href="DaLat/z5046012327654_94bd4a7e075b25dddc5b0f0e2b522b35.jpg"><img style="width:384px" src="DaLat/z5046012327654_94bd4a7e075b25dddc5b0f0e2b522b35.jpg"/></a></figure></div><div id="1ed01117-2246-80fd-a9f6-f3470e8d0c2e" style="width:50%" class="column"><figure id="1ed01117-2246-8047-ac06-c22f82e9cb46" class="image"><a href="DaLat/z5046012284910_ffab839eec092ef0f131fcbd2b4d0de4.jpg"><img style="width:384px" src="DaLat/z5046012284910_ffab839eec092ef0f131fcbd2b4d0de4.jpg"/></a></figure></div></div><figure id="1ed01117-2246-80db-9c58-d89a115e053f" class="image"><a href="DaLat/z5046012327654_94bd4a7e075b25dddc5b0f0e2b522b35%201.jpg"><img style="width:2568px" src="DaLat/z5046012327654_94bd4a7e075b25dddc5b0f0e2b522b35%201.jpg"/></a><figcaption>Tấm ảnh đẹp nhất~~~</figcaption></figure><p id="1ed01117-2246-8083-9480-c392ebe3cbd5" class="">Chờ mãi méo có đồ ăn, và…</p><div id="1ed01117-2246-8037-b12b-e5c220217fd1" class="column-list"><div id="1ed01117-2246-80b8-959a-de11ba8881e2" style="width:50%" class="column"><figure id="1ed01117-2246-804c-9364-d1fce96827a1"><div class="source"><a href="DaLat/8367408086315693362.mp4">attachment:681c046a-5637-4f2a-abf4-a4cdf73431ae:8367408086315693362.mp4</a></div></figure></div><div id="1ed01117-2246-8085-8034-c46a92ddb41f" style="width:50%" class="column"><figure id="1ed01117-2246-80b2-a3ff-f7dd8c22cdac"><div class="source"><a href="DaLat/8515032542706760352.mp4">attachment:ddc4fed1-1d96-414f-befd-b223ad7b615a:8515032542706760352.mp4</a></div></figure></div></div><p id="1ed01117-2246-80a4-8e0c-f25401a0c938" class="">Nhưng được cái đồ ăn ngon, và thêm nữa là nhà hàng to, rộng (không như năm 2025).</p><p id="1ed01117-2246-80b6-85f5-ccbdb9183820" class="">
+</p><p id="1ed01117-2246-80ac-85b5-f8f0cd906da8" class="">Rồi chơi đố vui trúng thưởng, không hiểu sao may mắn vl, đoán trúng bài hát luôn mà. Rồi được thưởng một bịch kẹo.</p><blockquote id="1ed01117-2246-8033-a9fc-e972376ccb14" class="">Sự non nớt của tuổi trẻ. Biết vậy lúc đó bóc ra rồi chia cho cả bàn rồi, lúc đó sẽ lấy ấn tượng được với bạn kia.</blockquote><h3 id="1ed01117-2246-8033-9e9a-ec38b4fd497d" class="">Đi uống Cà Phê.</h3><p id="1ed01117-2246-80fb-9a4f-d2925d440f6a" class="">Hôm này là đêm cuối rồi nên cả đám quyết định sẽ chơi cùng nhau. Đây là điểm mấu chốt mà tôi nghĩ rằng đây là chuyển đi chơi vui nhất.</p><p id="1ed01117-2246-80a5-9797-e6f58f9af2f6" class="">Lúc đó có đứa xuống ở khách sạn khác, có đứa về tính đi chơi với lớp khác. Rồi anh Văn Minh Hiển Đạt ra tay, gọi bắt mọi người tập trung lại đi chơi chung với nhau. Và chốt là đi uống Highlands Coffee ở gần bờ hồ.</p><p id="1ed01117-2246-80ff-9807-ef3ca329ec9e" class="">Cả đám méo có gì chơi nên quyết định chơi ma sói. Nhưng méo có ai mua bài cả nên là quay vòng quay may mắn để chọn role.</p><p id="1ed01117-2246-80ef-bee4-f52999e94c06" class="">Rồi về đến khách sạn chơi tiếp.</p><h3 id="1ed01117-2246-804c-88ae-ebe100366218" class="">Dạo chơi ở Hồ Xuân Hương 2</h3><p id="1ed01117-2246-8029-9c8b-ddd9df22135b" class="">Thật ra là méo đi, nhưng vì HuHu quên tắt con mẹ nó báo thức nên cả đám dậy. Nhưng chỉ có Phúc đi một mình, còn 3 thằng còn lại nằm ngủ.</p><figure id="1ed01117-2246-801a-8615-c0a9fe362a3d" class="image"><a href="DaLat/z5044247825335_2f536bb828a72062e5d35adae74c67da.jpg"><img style="width:709.984375px" src="DaLat/z5044247825335_2f536bb828a72062e5d35adae74c67da.jpg"/></a><figcaption>Có tấm ảnh mà mấy thằng phòng khác đi.</figcaption></figure><h1 id="1ed01117-2246-804d-b16c-dfdb9ed770ac" class="">Kết thúc</h1><p id="1ed01117-2246-80d8-a5fa-da0a46eb69e7" class="">Cuộc vui nào cũng phải kết thúc mà thôi.</p><p id="1ed01117-2246-80ab-9a6c-ed2c0aab0497" class="">Tôi trân trọng những phút giây ngày ấy (5-7/1/2024). </p><p id="1ed01117-2246-8002-bb82-c488a933b5b0" class="">Có những người bạn mà trong chuyến đi ấy tôi mới có dịp nói chuyện (Khánh Nam lớp T1, Hiếu lớp Lý, …). </p><p id="1ed01117-2246-80bb-bb22-dad3e78ef138" class="">Tuy là xe có tới 4 lớp ghép lại, nhưng tất đều là những bạn học sinh mới lớp 10, ai cũng háo hức cho một hành trình phía trước mắt, và cả là kỷ niệm đẹp cho tương lai sau này.</p><p id="1ed01117-2246-801f-bd88-d28d659ae553" class="">
+</p><p id="1ed01117-2246-8005-a69f-cb7349da7b8d" class="">Cảm xúc của tôi, có vui, có buồn, có nuối tiếc, nhưng tất cả đều là một cảm xúc trọn vẹn cho một hành trình tuyệt vời.</p><p id="1ed01117-2246-80ce-82af-e6604a0efdc7" class="">Cảm ơn mọi người~~~</p><p id="1ed01117-2246-8074-aa1c-f8104654f461" class="">
+</p></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
