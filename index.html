@@ -1,254 +1,143 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>TgX.2</title>
-    <link rel="icon" type="image/png" href="img/Site-favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bùi Đình Lộc - Academic Profile</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baskervville:ital,wght@0,400..700;1,400..700&family=Comfortaa:wght@300..700&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" crossorigin="anonymous">
 </head>
 <body>
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+        <span id="theme-icon">🌙</span>
+    </button>
 
-    <div class="video-container">
-        <video autoplay muted loop>
-            <source src="img/bg1.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
+    <div class="general">
+        <div class="info">
+            <h1>Bùi Đình Lộc • TgX.2</h1>
+            <h2>Freshman Student</h2>
+            <h2>Computer Science - University of Information Technology (VNU-HCM)</h2>
+            <p>Interested in</p>
+            <div class="block">
+                <p>Computer Science</p>
+                <p>Mathematics</p>
+                <p>Quantum Physics</p>
+                <p>Quantum Computing</p>
+            </div>
+        </div>
+        <div class="avt">
+            <img src="media/morehandsome.png" alt="avatar">
+        </div>
     </div>
 
-<div class="information">
-
-    <div class="navigation-bar">
+    <div class="aboutme">
+        <h1>About Me</h1>
+        <p>I am a first-year Computer Science student at the <b>University of Information Technology, VNU-HCM</b>.</p>
+        <p>I am currently exploring mathematics, physics, and computer science.</p>
+        <p>My long-term academic interests include:</p>
         <ul>
-            <li><button onclick="showPage('page1')">Information</button></li>
-            <li><button onclick="showPage('page2')">Achievement</button></li>
-            <li><button onclick="showPage('page3')">Blog</button></li>
+            <li>Theoretical Computer Science</li>
+            <li>Quantum Computing & Quantum Information</li>
+            <li>Pure Mathematics</li>
         </ul>
-    </div>
-    
-    <div id="page1" class="page active">
-        <div class="container">
-            <div class="sidebar">
-                <div class="image-container">
-                    <div class="circular-image">
-                        <img src="img/avt.jpg" alt="Avatar">
-                    </div>
-                </div>
-                <h2 class="stats">Bui Dinh Loc</h2>
-                <h3 class="stats-lower">TgX.2 · 12Ti · CHV</h3>
-                <div class="icon-left">
-                    <i class="fa-solid fa-star"></i>
-                    <p class="location">Vietnam</p>
-                </div>
-                <div class="icon-left">
-                    <i class="fa-regular fa-envelope"></i>
-                    <p class="email">buidinhloc231@gmail.com</p>
-                </div>
-            </div>
-            <div class="content">
-                <div class="content-head"><h1>HI 👋🏻</h1></div>
-                <div class="content-container">
-                    <p>Full name: Bui Dinh Loc</p>
-                    <p>Class: 12Ti</p>
-                    <p>School: Hung Vuong HSGS (Binh Duong)</p>
-                </div>
-                <div class="content-mid">
-                    <p>Love: Manga, Anime, Competitive Programming</p>
-                    <p>Hate: Competitive Programming</p>
-                    <p>Game: TFT, <a href="https://ch.tetr.io/u/tgx-2" >Tetr</a></p>
-                    <p>Fav song: <a class="favorite-song" href="https://open.spotify.com/track/2VEQrqsDbg3AZ5W8PPLb6L">Tinh ca Tay Bac</a>, <a class="favorite-song" href="https://open.spotify.com/track/4CVCw2VRaw3vvv6nuBpvGl">Truong Son Dong Truong Son Tay</a></p>
-    
-                </div>
-    
-                <div class="content-bot">
-                    <div class="social-media">
-                        <a href="https://www.facebook.com/DangThi.GHKII/">
-                            <i class="fa-brands fa-facebook"></i>
-                        </a>
-                        <a href="https://www.instagram.com/dnhlc_291/">
-                            <i class="fa-brands fa-square-instagram"></i>
-                        </a>
-                        <a href="https://www.youtube.com/@buidinhloc">
-                            <i class="fa-brands fa-youtube"></i>
-                        </a>
-                        <a href="https://github.com/TgX-2">
-                            <i class="fa-brands fa-github"></i>
-                        </a>
-                        <a href="https://codeforces.com/profile/tgx.2">
-                            <i class="fa-solid fa-code"></i>
-                        </a>
-    
-                    </div>
-                </div>
-            </div>
+        <p>Since I am currently a first-year student, these ambitious goals may evolve over time, 
+            but they reflect my genuine passion and current research direction.</p>
         </div>
         
-    </div>
-    
-    <div id="page2" class="page">
-        <div class="timeline-page2">
-            <div class="container-page2 left"><div class="content-page2">
-                <h2>2019</h2>
-                <ul><p>Nhất tin học trẻ tỉnh</p></ul>
-                <img src="img/tht1.jpg">
-
-                <ul><p>   </p></ul>
-                <ul><p>   </p></ul>
-
-                <ul><p>Khuyến khích tin học trẻ quốc gia</p></ul>
-                <img src="img/tht0.jpg">
-            </div>
-            </div>
-    
-            <div class="container-page2 right"><div class="content-page2">
-                <h2>2023</h2>
-                <ul><p>Ba Học sinh giỏi tỉnh</p></ul>
-                <img src="img/hsg.jpg">
-    
-                <ul><p>   </p></ul>
-                <ul><p>   </p></ul>
-
-                <ul><p>Nhì tin học trẻ tỉnh</p></ul>
-                <img src="img/tht2.jpg">
-
-                <ul><p>   </p></ul>
-                <ul><p>   </p></ul>
-
-                <ul><p>Ba tin học trẻ khu vực</p></ul>
-                <img src="img/tht4.jpg">
-            </div>
-            </div>
-    
-            <div class="container-page2 left"><div class="content-page2">
-                <h2>2024</h2>
-                <ul><p>Nhì tin học trẻ tỉnh (cam on teammate)</p></ul>
-                <img src="img/tht3.jpg">
-
-                <ul><p>   </p></ul>
-                <ul><p>   </p></ul>
-
-                <ul><p>Ba tin học trẻ khu vực</p></ul>
-                <img src="img/anhhung.png">
-
-                <ul><p>   </p></ul>
-                <ul><p>   </p></ul>
-    
-                <ul><p>Đi học liên kết ở THPT Chuyên Lê Quý Đôn - Ninh Thuận</p></ul>
-                <img src="img/lequydon.jpg">
-
-                <ul><p>   </p></ul>
-                <ul><p>   </p></ul>
-
-                <ul><p>Poker rớt Olympic (30/4 - DHBB - THPN - HSGSO)</p></ul>
-            </div>
-            </div>
-    
-    
-            <div class="container-page2 right"><div class="content-page2">
-                <h2>2025</h2>
-                <ul><p>Được đi chơi ở THPT Chuyên Lê Hồng Phong</p></ul>
-                <img src="img/lehongphong.jpg">
-
-                <ul><p>   </p></ul>
-                <ul><p>   </p></ul>
-
-                <ul><p>Huy chương bạc Olympic Khoa học Tự nhiên - HSGSO</p></ul>
-                <img src="img/hsgso.png">
-
-                <ul><p>   </p></ul>
-                <ul><p>   </p></ul>
-
-                <ul><p>Ba tin học trẻ cấp tỉnh</p></ul>
-                <img src="img/tht5.jpg">
-
-                <ul><p>   </p></ul>
-                <ul><p>   </p></ul>
-
-                <ul><p>Nhì tin học trẻ cấp khu vực (camon teammate)</p></ul>
-                <img src="img/tht6.jpg">
-
-                <ul><p>   </p></ul>
-                <ul><p>   </p></ul>
-
-                <ul><p>Đi học liên kết ở THPT Chuyên Nguyễn Chí Thanh - Đăk Nông</p></ul>
-                <img src="img/nguyenchithanh.jpg">
-            </div>
-            </div>
-        </div>
-
-    </div>
-
-    <div id="page3" class="page">
-        <div class="card-container">
-
-            <div class="card">
-                <div class="card-img">
-                    <img src="img/sa.png" alt="Image Placeholder">
-                </div>
-                <div class="card-content">
-                    <span class="label">Thuật toán</span>
-                    <span class="label">Heuristic</span>
-                    <span class="label">Tin học</span>
-                    <h3>Thuật toán Mô phỏng tôi</h3>
-                    <p>Simulated Annealing</p>
-                </div>
-                <button onclick="window.open('blog/Simulated Annealing.html', '_blank');" class="card-button">
-                    🔗  Link  🔗
-                </button>
-            </div>
-    
-            <div class="card">
-                <div class="card-img">
-                    <img src="img/cht.png" alt="Image Placeholder">
-                    
-                </div>
-                <div class="card-content">
-                    <span class="label">Hình học</span>
-                    <span class="label">Quy hoạch động</span>
-                    <span class="label">Tin học</span>
-                    <h3>Convex Hull Trick</h3>
-                    <p>và biến thể của nó</p>
-                </div>
-                <button onclick="window.open('blog/Convex Hull Trick.html', '_blank');" class="card-button">
-                    🔗  Link  🔗
-                </button>
-            </div>        
-            <div class="card">
-                <div class="card-img">
-                    <img src="img/dalat.png" alt="Image Placeholder">
-                    
-                </div>
-                <div class="card-content">
-                    <span class="label">Du lịch</span>
-                    <span class="label">Đà Lạt</span>
-                    <h3>Đi ngoại khóa Đà Lạt 2024</h3>
-                    <p>chuyển đi tuyệt vời nhất</p>
-                </div>
-                <button onclick="window.open('blog/DaLat.html', '_blank');" class="card-button">
-                    🔗  Link  🔗
-                </button>
-            </div>    
-
+        <div class="currentlearning">
+            <h1>Past and Current Learning</h1>
             
+            <h2>Mathematics</h2>
+            <ul>
+                <li>Calculus</li>
+                <li>Linear Algebra</li>
+                <li>Multivariable Calculus</li>
+                <li>Real Analysis</li>
+                <li>Metric Spaces</li>
+                <li>Feynman's technique (because I love calculus and Feynman)</li>
+            </ul>
+            
+            <h2>Physics</h2>
+            <ul>
+                <li>Introductory Quantum Mechanics (High School Level)</li>
+            </ul>
+            
+            <h2>Computer Science</h2>
+            <p><i>Having a background in Specialized Informatics, I have explored a wide range of algorithms. Topics I found particularly fascinating and gave presentations on include:</i></p>
+            <ul>
+                <li>Simulated Annealing</li>
+                <li>Convex Hull Trick</li>
+            </ul>
         </div>
-        <!-- <blog>
-            <div class="blogcontainer">
-                <a href="blog/Simulated Annealing.html" target="_blank">Thuật toán Mô phỏng tôi - Simulated Annealing</a>
-            </div>
+        
+        <div class="project">
+        <h1>Projects</h1>
 
-            <div class="blogcontainer">
-                <a href="blog/Convex Hull Trick.html" target="_blank">Thuật toán Con-vét Hull Tríck - Quy hoạch động Bao lồi</a>
-            </div>
+        <h2>Mathematical Notes</h2>
+        <p><i>(Inspired by Paul's Online Math Notes)</i></p>
+        <p>A personal collection of mathematics notes written in a lecture-note style.</p>
+        <p>Topics currently included:</p>
+        <ul>
+            <li>Multivariable Calculus</li>
+            <li>Linear Algebra</li>
+            <li>Real Analysis</li>
+            <li>Metric Spaces</li>
+        </ul>
 
-            <div class="blogcontainer">
-                <a href="blog/Simulated Annealing.html" target="_blank">Thú vui tao nhã</a>
-                
-            </div>
-        </blog> -->
+        <a href="https://tgx-2.github.io/note" target="_blank" class="btn-link">View my notes</a>
+
+        <h2>Competitive Programming</h2>
+        <p><i>A collection of my solutions and team implementations for various programming competitions.</i></p>
+        <p>Currently includes:</p>
+        <ul>
+            <li><a href="https://github.com/TgX-2/ICPC_National_2025" target="_blank">ICPC National 2025</a></li>
+            <li><a href="https://github.com/TgX-2/Solutions-HSGTPHCM" target="_blank">Ho Chi Minh City Competition for Gifted Students</a></li>
+            <li><a href="https://github.com/TgX-2/Solutions-VOI" target="_blank">Vietnam Olympiad in Informatics (VOI)</a></li>
+            <li><a href="https://github.com/TgX-2/Solutions-Olympic-30-4" target="_blank">Traditional Olympic 30/4</a></li>
+        </ul>
     </div>
-</div>
 
-<script src="script.js"></script>
+    <div class="seccontact">
+        <h1>Contact</h1>
+        <div class="link">
+            <ul>
+                <li><a href="https://facebook.com/dangthi.ghkii" target="_blank">Facebook</a></li>
+                <li><a href="https://github.com/TgX-2" target="_blank">GitHub</a></li>
+            </ul>
+        </div>
+        <div class="contact"></div>
+    </div>
+
+    <script>
+        
+        const toggleBtn = document.getElementById('theme-toggle');
+        const themeIcon = document.getElementById('theme-icon');
+        const currentTheme = localStorage.getItem('theme') || 'light';
+
+        document.documentElement.setAttribute('data-theme', currentTheme);
+        themeIcon.textContent = currentTheme === 'dark' ? '☀️' : '🌙';
+
+        toggleBtn.addEventListener('click', () => {
+            let theme = document.documentElement.getAttribute('data-theme');
+            let newTheme = theme === 'dark' ? 'light' : 'dark';
+            
+            document.documentElement.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            themeIcon.textContent = newTheme === 'dark' ? '☀️' : '🌙';
+        });
+
+        document.addEventListener('contextmenu', e => e.preventDefault());
+        document.addEventListener('keydown', e => {
+            if (
+                e.key === 'F12' ||
+                (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'C')) ||
+                (e.ctrlKey && e.key === 'u')
+            ) {
+                e.preventDefault();
+            }
+        });
+    </script>
 </body>
 </html>
